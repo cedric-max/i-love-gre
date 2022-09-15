@@ -1,15 +1,23 @@
 <template>
-  <hello-world />
+  <CardComponent />
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+import CardComponent from "@/components/card/CardComponent";
 
 export default {
   name: "HomeView",
 
   components: {
-    HelloWorld,
+    CardComponent,
+  },
+  methods: {
+    testAppel() {
+      console.log("TestMounted");
+    },
+  },
+  mounted() {
+    this.testAppel();
   },
 };
 </script>
